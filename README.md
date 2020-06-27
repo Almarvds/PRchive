@@ -1,4 +1,4 @@
-# PRchive
+# PRchive - time to PR
 A powerlifting or gym personal best tracking platform
 
 ## Objectives
