@@ -1,9 +1,25 @@
 .pageTitle{
   margin-top: 5%;
-text-align: center;
+  text-align: center;
 }
 
 .pageTitle img{
-height:7%;
-margin-bottom:-0.45%;
+  height:7%;
+  margin-bottom:-0.45%;
+}
+
+.login{
+  margin: auto;
+  margin-top: 5%;
+  padding-top: 1%;
+  width:20%;
+  text-align: center;
+  border: 1px grey solid;
+  box-shadow: 10px 10px 37px -21px rgba(0,0,0,1);
+}
+
+.loginPut {
+  text-align: center;
+  width:80%;
+  padding: 10%;
 }
