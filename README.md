@@ -13,6 +13,7 @@ A powerlifting or gym personal best tracking platform
 * [ ] 💡 Deploy the client with vercel
 * [ ] 💡 Deploy the database with mongoDB
 * [ ] 💡 Deploy the server with vercel
+* [ ] 🎨 Brand the platform
 
 ## Front-end
 
