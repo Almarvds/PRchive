@@ -5,13 +5,14 @@
 
 .pageTitle img{
   height:7%;
-  margin-bottom:-0.45%;
+  margin-bottom:0.7%;
 }
 
 .login{
   margin: auto;
   margin-top: 5%;
   padding-top: 1%;
+  padding-bottom: 1%;
   width:20%;
   text-align: center;
   border: 1px grey solid;
