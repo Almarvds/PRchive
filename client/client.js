@@ -5,10 +5,15 @@ var homeScreen = document.querySelector('div.homeScreen')
 homeScreen.style.display='none';
 
 
-function loggedIn(){
+function loggedIn(user){
   console.log('logged in')
   form.style.display = 'none';
   homeScreen.style.display='';
+  drawProfile(user)
+}
+
+function drawProfile(userName){
+  var userProfile = document.querySelector('.profile')
 }
 
 form.onsubmit = async function() {
@@ -37,7 +42,7 @@ form.onsubmit = async function() {
       var legit = emailNew.legit
       console.log(legit)
       if(legit){
-        loggedIn()
+        loggedIn(username)
       }
   })
 };
@@ -66,7 +71,9 @@ document.getElementById('btn2').onclick = function() {
         console.log(text)
         var emailNew = JSON.parse(text)
         var legit = emailNew.legit
-        console.log(legit)
+        if(legit){
+          loggedIn(userName)
+        }
     })
     console.log('done')
 };
