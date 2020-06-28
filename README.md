@@ -4,7 +4,9 @@ A powerlifting or gym personal best tracking platform
 ## Objectives
 
 * [ ] ⌨️ Allow user to make an account on the Client
-* [ ] ➡️ Send login or workout data from the client to the server
+* [x] ➡️ Send login data from the client to the server
+* [x] 💾 Store login data in a database
+* [ ] ➡️ Send workout data from the client to the server
 * [ ] 💾 Store data in a database
 * [ ] 🔍 Retrieve data from a database on the Server
 * [ ] ⬅️ Retrieve data from a server on the client using Fetch
@@ -39,9 +41,3 @@ A powerlifting or gym personal best tracking platform
 * [ ] add friend request post route
 * [ ] add friend data get route
 * [ ] add your own data get route
- 
-
-
-
-
-

@@ -1,6 +1,15 @@
 console.log('client.js called')
 
 var form = document.querySelector('form');
+var homeScreen = document.querySelector('div.homeScreen')
+homeScreen.style.display='none';
+
+
+function loggedIn(){
+  console.log('logged in')
+  form.style.display = 'none';
+  homeScreen.style.display='';
+}
 
 form.onsubmit = async function() {
   event.preventDefault()
@@ -27,13 +36,15 @@ form.onsubmit = async function() {
       var emailNew = JSON.parse(text)
       var legit = emailNew.legit
       console.log(legit)
+      if(legit){
+        loggedIn()
+      }
   })
-  console.log('done')
 };
 
 document.getElementById('btn2').onclick = function() {
     event.preventDefault()
-    const backend_URL = 'http://localhost:5000/login'
+    const backend_URL = 'http://localhost:5000/signup'
     const formData = new FormData(form)
     const username = formData.get('username')
     const password = formData.get('password')
